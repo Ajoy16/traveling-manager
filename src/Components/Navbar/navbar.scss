@@ -1,0 +1,90 @@
+
+
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);
+
+    .logo{
+        color: blueviolet;
+        font-weight: 600;
+        cursor: pointer;
+        align-items: center;
+        justify-items: center;
+
+        .icon{
+            font-size: 25px;
+            color: rgb(107, 37, 172);
+            transform: translateY(5px);
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .toggleNavbar, .closeNavbar{
+        display: none;
+    }
+
+    .header{
+        padding: 1.5rem 2rem ;
+
+        .navBar{
+            .navLists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .navItem{
+                    .navLink{
+                        color: black;
+                        padding: 0 0.55rem ;
+                        font-size: 1rem;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: blueviolet;
+
+                        }
+                       
+                    }
+                }
+
+                .btn{
+                    margin-left: 1rem;
+                    a{
+                        color: whitesmoke;
+                        font-weight: 500;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 0.8rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1240px){
+    .header{
+       padding: 1rem 8.5rem;
+    }
+}
